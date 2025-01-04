@@ -37,7 +37,7 @@ public class UserDetailsServiceImpl implements UserDetailsService{
 	@Override
 	public void updateUserDetails(UserDetails userDetails) {
 		// TODO Auto-generated method stub
-		userDetailsRepo.updateUserDetails(userDetails.getPassword(), userDetails.getReentter_Password(), userDetails.getPhone_Number(),userDetails.user_ID );
+		userDetailsRepo.updateUserDetails(userDetails.getPassword(), userDetails.getReentter_password(), userDetails.getPhone_number(),userDetails.user_ID );
 	}
 
 

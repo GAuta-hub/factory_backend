@@ -22,7 +22,7 @@ public interface UserDetailsRepo extends JpaRepository<UserDetails, Integer>{
 
 	
 	@Modifying
-	@Query(nativeQuery = true,value="update userdetails set password=?1,reentter_Password=?2,phone_Number=?3 where user_ID=?4")
-	void updateUserDetails(String password, String reentter_Password, String phone_Number, int user_ID);
+	@Query(nativeQuery = true,value="update userdetails set password=?1,reentter_password=?2,phone_number=?3 where user_ID=?4")
+	void updateUserDetails(String password, String reentter_password, String phone_number, int user_ID);
 
 }
