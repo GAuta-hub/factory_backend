@@ -28,7 +28,7 @@ public class SalaryController {
 	}
 	
 	@PostMapping("/addsalarydetails")
-	public void addSalary(@RequestBody Salary salary) {
+	public void addaddSalarySalary(@RequestBody Salary salary) {
 		salaryService.addSalary(salary);
 	}
 	

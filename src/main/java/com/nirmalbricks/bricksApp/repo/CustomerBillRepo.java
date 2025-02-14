@@ -18,7 +18,7 @@ public interface CustomerBillRepo extends JpaRepository<CustomerBill, Integer>{
 	
 	@Modifying
 	@Query(nativeQuery = true,value="delete from customerbill where customer_bill_id=?1")
-	void deleteCustomerBillDetails(int customer_Bill_id);
+	void deleteCustomerBillDetails(int customer_bill_id);
 
 	
 	@Modifying

@@ -11,7 +11,7 @@ public interface CustomerBillService {
 	
 	public void addCustomerBill(CustomerBill customerBill);
 
-	public void deleteCustomerBillDetails(int customer_id);
+	public void deleteCustomerBillDetails(int customer_bill_id);
 
 	public void updateCustomerBillDetails(CustomerBill customerBill);
 }

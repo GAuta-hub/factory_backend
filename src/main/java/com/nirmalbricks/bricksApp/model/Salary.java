@@ -1,5 +1,7 @@
 package com.nirmalbricks.bricksApp.model;
 
+import java.sql.Date;
+
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
 import jakarta.persistence.Table;
@@ -10,7 +12,7 @@ public class Salary {
 	@Id
 	public int serial_number;
 	public String worker_name;
-	public String date;
+	public Date date;
 	public int total_salary;
 	public int advances;
 	public int salary_paid;
@@ -27,10 +29,11 @@ public class Salary {
 	public void setWorker_name(String worker_name) {
 		this.worker_name = worker_name;
 	}
-	public String getDate() {
+
+	public Date getDate() {
 		return date;
 	}
-	public void setDate(String date) {
+	public void setDate(Date date) {
 		this.date = date;
 	}
 	public int getTotal_salary() {

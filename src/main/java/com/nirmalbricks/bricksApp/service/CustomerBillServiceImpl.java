@@ -31,9 +31,9 @@ public class CustomerBillServiceImpl implements CustomerBillService{
 
 	@Override
 	@Transactional
-	public void deleteCustomerBillDetails(int customer_id) {
+	public void deleteCustomerBillDetails(int customer_bill_id) {
 		// TODO Auto-generated method stub
-		customerBillRepo.deleteCustomerBillDetails(customer_id);
+		customerBillRepo.deleteCustomerBillDetails(customer_bill_id);
 	}
 
 	@Override

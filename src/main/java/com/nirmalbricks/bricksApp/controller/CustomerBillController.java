@@ -16,6 +16,7 @@ import org.springframework.web.bind.annotation.RestController;
 import com.nirmalbricks.bricksApp.model.CustomerBill;
 import com.nirmalbricks.bricksApp.service.CustomerBillService;
 
+
 @CrossOrigin(origins = "*")
 @RestController
 public class CustomerBillController {
@@ -36,8 +37,9 @@ public class CustomerBillController {
 	  }
 	  
 	  @DeleteMapping("/deleteuser") 
-	  public void deleteCustomerBillDetails(@RequestParam(name="customerId") int customerId) { 
-		  customerBillService.deleteCustomerBillDetails(customerId);
+	  public void deleteCustomerBillDetails(@RequestParam(value = "customer_bill_id") int customer_bill_id) { 
+		 
+		  customerBillService.deleteCustomerBillDetails(customer_bill_id);
 		   }
 
 	  
